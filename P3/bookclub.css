@@ -1,0 +1,379 @@
+html{
+     color: #4A73FF;
+     font-family: 'Montserrat', sans-serif;
+     max-height: 100%;
+     max-width: 100%;
+     overflow-x: hidden;
+}
+ header{
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 30px;
+     padding-right: 30px;
+     font-weight: bold;
+     transform: scaleY(1.2);
+}
+ p{
+     margin: 0;
+}
+ body {
+     margin: 0;
+}
+ main {
+     overflow-y:visible;
+     overflow-x: hidden;
+     padding-left: 30px;
+     padding-right: 30px;
+     margin-top: 30px;
+     font-size: 30px;
+}
+
+ #form{
+     font-family: 'Roboto';
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     margin: auto;
+}
+ #headerFB {
+     display: flex 
+}
+ #bookClubTitle {
+     flex-grow: 1;
+}
+ #bookClubTitle {
+     flex-grow: 1;
+}
+ #HeaderForm {
+     flex-grow: 3;
+}
+ #prompt1{
+     padding-left: 93px;
+     padding-bottom: 30px;
+     font-size: 35px;
+     color: #474646;
+}
+ #prompt2 > #submit {
+     transform: translate(0%,9px) 
+}
+ #prompt2{
+     display: flex;
+     flex-direction: row;
+     align-self: center;
+     flex-shrink: 1;
+     flex-wrap: wrap;
+}
+ #prompt2 > div {
+     font-size: 20px;
+     padding-bottom: 10px;
+}
+ #prompt3 {
+     align-self: center;
+     flex-wrap:wrap;
+}
+ .opt{
+     display: flex;
+     flex-direction: column;
+}
+ .opt > div {
+     padding-left: 10px;
+     padding-bottom: 5px;
+     font-weight: lighter;
+     font-size: 15px;
+}
+ .or{
+     padding-top: 35px;
+     padding-left: 10px;
+     padding-right: 10px;
+     font-weight: 700;
+     text-align: center;
+     border-color: green;
+}
+ .input_button{
+     border-radius: 10px;
+     margin: auto;
+     padding: 12px 20px;
+     font-size: 25px;
+}
+ #submit{
+     width: 150px;
+     background-color: #4A73FF;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 15px;
+     cursor: pointer;
+     align-self: center;
+     font-size: 20px 
+}
+ #keepbutton {
+     background-color: #4CAF50;
+    /* Green */
+     border: none;
+     border-radius: 10px;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     position: fixed;
+     top: 85%;
+     color: white;
+     padding: 15px 32px;
+     font-size: 20px;
+     left: 50%;
+     transform: translate(-50%);
+     margin: auto;
+}
+ #okbutton {
+     background-color: #4CAF50;
+    /* Green */
+     border: none;
+     border-radius: 10px;
+     color: white;
+     text-align: center;
+     text-decoration: none;
+     position: fixed;
+     top: 85%;
+     color: white;
+     padding: 15px 32px;
+     font-size: 20px;
+     left: 50%;
+     transform: translate(-50%);
+     margin: auto;
+}
+ .EachTile {
+     box-shadow: 7px 4px 20px black;
+     flex-grow: 1;
+     max-width: 400px;
+     height: 300px;
+     display: flex;
+     font-size: 15px;
+     margin: 10px;
+     padding: 20px;
+     text-overflow: ellipsis;
+     color: black;
+     background-color: white;
+}
+ #booktitle {
+     font-size: 1.25em;
+     font-weight: bold;
+     padding-bottom: 10px;
+}
+ .EachTile > #tiletxtcolumn >#bookauthor {
+     font-size: 1.25em;
+     padding-bottom: 10px;
+}
+ #modalcontent > #txtcolumn {
+     padding-left: 30px;
+     padding-top: 35px;
+     font-size: 2em;
+     display: -webkit-box;
+     -webkit-line-clamp: 7;
+     -webkit-box-orient: vertical;
+     text-overflow: ellipsis;
+     overflow: hidden;
+}
+ #modalcontent > #txtcolumn > #bookauthor {
+     font-size: 1.25em;
+     padding-bottom: 20px;
+}
+ #modalcontent > #txtcolumn > #booktitle {
+     padding-bottom: 10px;
+}
+ #bookdescription {
+     display: -webkit-box;
+     -webkit-line-clamp: 7;
+     -webkit-box-orient: vertical;
+     text-overflow: ellipsis;
+     overflow: hidden;
+}
+ #bookOverlay {
+     position: fixed;
+    /* Sit on top of the page content */
+     display: none;
+    /* Hidden by default */
+     width: 100%;
+    /* Full width (cover the whole page) */
+     height: 100%;
+    /* Full height (cover the whole page) */
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0,0,0,0.8);
+    /* Black background with opacity */
+     z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+     cursor: pointer;
+    /* Add a pointer on hover */
+}
+ #nobookOverlay {
+     position: fixed;
+    /* Sit on top of the page content */
+     display: none;
+    /* Hidden by default */
+     width: 100%;
+    /* Full width (cover the whole page) */
+     height: 100%;
+    /* Full height (cover the whole page) */
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0,0,0,0.8);
+    /* Black background with opacity */
+     z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+     cursor: pointer;
+    /* Add a pointer on hover */
+     text-align: center;
+}
+ #nobooktxt{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     font-size: 50px;
+     color: white;
+     transform: translate(-50%,-50%);
+     -ms-transform: translate(-50%,-50%);
+     white-space: pre-line;
+}
+ #leftbutton {
+     position: fixed;
+     top: 50%;
+     color: white;
+     left: 10%;
+     transform: translate(0%, -50%);
+    /* bring your own prefixes */
+}
+ #theFlexBox {
+     height: 100%;
+     margin: 0;
+     width: 100%;
+     margin: 0px;
+     padding: 0px;
+     overflow-x: hidden;
+     display: flex;
+     flex-wrap: wrap;
+}
+ #imgcolumn {
+     flex:1;
+}
+ #imgcolumn img {
+     width: 100%;
+     height: 100%;
+}
+ #tileimgcolumn {
+     padding-right: 20px;
+     width: 50%;
+     flex-grow: 1;
+}
+ #tiletxtcolumn {
+     overflow: hidden;
+     padding-top: 10px;
+     padding-left: 20px;
+     width: 50%;
+     flex-grow: 1;
+}
+ #tileimgcolumn img {
+     max-width: 100%;
+     height : 100%;
+}
+ #txtcolumn {
+     flex:1;
+}
+/* Modal Content */
+ #modalcontent {
+     background-color: white;
+     margin: auto;
+     padding: 50px;
+     padding-right: 20px;
+     border: 1px solid #888;
+     width: 35%;
+     height: 45%;
+     font-size: 1.25em;
+     font-size: 25px;
+     color: black;
+     display: flex;
+     flex: 1 0 auto;
+}
+ #overlayclosebutton {
+     position: fixed;
+     color: white;
+     right:5%;
+     top: 5%;
+}
+ #rightbutton {
+     position: fixed;
+     top: 50%;
+     right: 10%;
+     color: white;
+     transform: translate(0%, -50%);
+    /* bring your own prefixes */
+}
+ #bookOverlay > div{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     font-size: 10px;
+     transform: translate(-50%,-50%);
+     -ms-transform: translate(-50%,-50%);
+}
+ @media only screen and (max-width: 480px) {
+     header{
+         text-align: center;
+    }
+     #prompt1{
+         padding-bottom: 30px;
+         padding-left: 25px;
+         font-size: 30px;
+    }
+     #prompt2{
+         flex-direction: column;
+         padding-bottom: 50px;
+    }
+     #modalcontent
+     {
+         
+         width: 80%;
+     }
+     #modalcontent > #txtcolumn
+     {
+         font-size: 13px;
+     }
+     #rightbutton
+     {
+         top: 5%;
+             right: 40%;
+         transform: scale(.4);
+     }
+     #leftbutton
+     {
+         top:75%;
+         left: 40%;
+        transform: scale(.4);
+     }
+     #keepbutton {
+         top:90%;
+         transform: scale(.8);
+         left: 40%;
+     }
+     
+     .or{
+         text-align: center;
+         font-weight: 700;
+         padding: 0px;
+    }
+     #prompt3{
+         padding: 0px;
+         display: flex;
+         align-self: center;
+    }
+     #submit{
+         width: 300px;
+    }
+     #input_button{
+         border-width: thick;
+    }
+}
+ 
