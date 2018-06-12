@@ -1,0 +1,235 @@
+
+body {
+    min-height: 100vh;
+   overflow-y:scroll;
+    /* need this line to
+                      tell body to fill viewport */
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: blue;
+}
+div#numautocomplete-selected {
+
+    display: flex;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+}
+div#selected {
+    display: flex;
+}
+
+#selectedLabel
+{
+    left: 4px;
+    top: 4px;
+    padding: 10px;
+}
+
+.selectedtags {
+    padding-left: 10px;
+    left: 4px;
+    top: 4px;
+    zIndex: 2;
+    background-color: #7f8081;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    word-break: break-all;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 100;
+}
+main {
+    position: relative;
+    background-color: #EFF0F1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+header {
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    font-size: 2.2em;
+
+}
+
+#bookClubTitle {
+    flex-grow: 1;
+    color: #304e7e;
+}
+
+#query {
+
+    flex-grow: 3;
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the search field */
+#num {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 100%;
+    background: clear;
+}
+
+/* Style the submit button */
+#sub {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: clear;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    max-height: fit-content;
+
+}
+
+#srch_bttn {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: clear;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#initialtext
+{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+#headerFB {
+    display: flex
+}
+
+main {
+    flex: 1 0 auto; /* the sticky footer trick without the footer */
+}
+
+p {
+    font-size: medium;
+    margin: 10px;
+}
+
+div#photoDisplay {
+    width: 400px;
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+form#theform {
+    width: 80%;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #num {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 100%;
+        background: clear;
+    }
+    #bookClubTitle {
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
+    #srch_bttn
+    {
+        padding-left: 70px;
+        padding-right: 10px;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    /* Style the submit button */
+    #sub {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: clear;
+        color: black;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    }
+
+}
+
+
+.autocomplete {
+    position: relative;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
